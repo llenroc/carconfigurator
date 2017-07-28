@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="CarConfigurator.Frontend.Forms.Pages.BodySelectionPage"
+    Title="Body">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+	    <ScrollView Padding="20" Grid.Row="0">
+            <StackLayout Spacing="10">
+
+                <Label
+                    Text="Body style"
+                    Style="{StaticResource PickerLabelStyle}" />
+                <Picker
+                    x:Name="BodyStylePicker"
+                    Margin="0, 0, 0, 10"
+                    Style="{StaticResource PickerStyle}" />
+
+                <Label 
+                    Text="Wheel base" 
+                    Style="{StaticResource PickerLabelStyle}" />
+                <Picker
+                    x:Name="WheelBasePicker"
+                    Margin="0, 0, 0, 10"
+                    Style="{StaticResource PickerStyle}" />
+            </StackLayout>        
+        </ScrollView>    
+
+        <Button
+            x:Name="FinishButton"
+            Grid.Row="1"
+            Margin="20"
+            Text="Finish"
+            Clicked="FinishButton_Clicked"
+            TextColor="White"
+            BackgroundColor="{StaticResource AccentColor}" />
+    </Grid>
+</ContentPage>

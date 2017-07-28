@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="CarConfigurator.Frontend.Forms.Pages.MotorSelectionPage"
+    Title="Motor">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Padding="20" Grid.Row="0">
+            <StackLayout Spacing="10">
+
+                <Label Text="Fuel type" Style="{StaticResource PickerLabelStyle}" />
+                <Picker x:Name="FuelTypePicker" Margin="0,0,0,10" Style="{StaticResource PickerStyle}" />
+                
+                <Label Text="Engine size" Style="{StaticResource PickerLabelStyle}" />
+                <Picker x:Name="EngineSizePicker" Margin="0,0,0,10" Style="{StaticResource PickerStyle}" />
+                           
+                <Label Text="Horsepower" Style="{StaticResource PickerLabelStyle}" />
+                <Picker x:Name="HorsePowerPicker" Margin="0,0,0,10" Style="{StaticResource PickerStyle}"/>
+
+                <Label Text="Peak RPM" Style="{StaticResource PickerLabelStyle}" />
+                <Picker x:Name="PeakRpmPicker" Margin="0,0,0,10" Style="{StaticResource PickerStyle}" />
+
+                <Label Text="Highway MPG" Style="{StaticResource PickerLabelStyle}" />
+                <Picker x:Name="HighwayMpgPicker" Margin="0,0,0,10" Style="{StaticResource PickerStyle}" />
+            </StackLayout>        
+        </ScrollView>    
+
+        <Button 
+            x:Name="NextButton"
+            Margin="20"
+            Grid.Row="1"
+            Text="Next"
+            Clicked="NextButton_Clicked"
+            TextColor="White"
+            BackgroundColor="{StaticResource AccentColor}"/>
+    </Grid>
+</ContentPage>

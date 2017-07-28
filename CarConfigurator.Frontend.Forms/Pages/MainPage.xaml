@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:CarConfigurator.Frontend.Forms"
+	x:Class="CarConfigurator.Frontend.Forms.Pages.MainPage"
+    Title="Car Configurator">
+	<StackLayout>
+        <Frame BackgroundColor="{StaticResource SecondaryAccentColor}" HasShadow="false" CornerRadius="0" Margin="0,0,0,5">       
+            <StackLayout HorizontalOptions="Center" Padding="20,30">
+                <Image Source="carconfigwhite.png" Margin="0,0,0,10" />
+                <Label Text="Car Configurator" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center"/>
+                <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat." FontSize="Small" TextColor="White" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+                
+        <Button
+            Text="Begin Configuration"
+            Clicked="BeginButton_Clicked"
+            TextColor="White"
+            Margin="20,5"
+            BackgroundColor="{StaticResource AccentColor}" />
+
+        <Button
+            Text="Learn more about Machine Learning"
+            TextColor="White"
+            Margin="20,5"
+            Clicked="MoreAzureMlButton_Clicked"
+            BackgroundColor="{StaticResource TextColor}" />
+
+        <Button
+            Text="Learn more about Xamarin"
+            TextColor="White"
+            Margin="20,5"
+            Clicked="MoreXamarinButton_Clicked"
+            BackgroundColor="{StaticResource TextColor}" />
+        
+    </StackLayout>
+</ContentPage>
