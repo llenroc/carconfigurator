@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConfigurator.Frontend.Forms", "CarConfigurator.Frontend.Forms\CarConfigurator.Frontend.Forms.csproj", "{817DF410-6BCF-4490-A8BB-2F83976CB4CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConfigurator.Frontend.Forms.iOS", "iOS\CarConfigurator.Frontend.Forms.iOS.csproj", "{9FEC8262-0FA9-4D5D-A122-1A55CA9544D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConfigurator.Frontend.Forms.iOS", "CarConfigurator.Frontend.Forms.iOS\CarConfigurator.Frontend.Forms.iOS.csproj", "{9FEC8262-0FA9-4D5D-A122-1A55CA9544D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConfigurator.Frontend.Forms.UITests", "UITests\CarConfigurator.Frontend.Forms.UITests.csproj", "{D409E82F-59BC-4B6C-8993-AD8EC50C11A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConfigurator.Frontend.Forms.UITests", "CarConfigurator.Frontend.Forms.UITests\CarConfigurator.Frontend.Forms.UITests.csproj", "{D409E82F-59BC-4B6C-8993-AD8EC50C11A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConfigurator.Frontend.Forms.Droid", "Droid\CarConfigurator.Frontend.Forms.Droid.csproj", "{FC3D0896-27CB-4F05-AEDD-B34B4C8B263D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConfigurator.Frontend.Forms.Droid", "CarConfigurator.Frontend.Forms.Droid\CarConfigurator.Frontend.Forms.Droid.csproj", "{FC3D0896-27CB-4F05-AEDD-B34B4C8B263D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
