@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Microsoft.Azure.Mobile.Distribute;
 using UIKit;
 
 namespace CarConfigurator.Frontend.Forms.iOS
@@ -19,6 +20,7 @@ namespace CarConfigurator.Frontend.Forms.iOS
             //Xamarin.Calabash.Start();
 #endif
 
+            Distribute.DontCheckForUpdatesInDebug();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

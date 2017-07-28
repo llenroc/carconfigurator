@@ -2,6 +2,10 @@
 using Xamarin.Forms;
 using CarConfigurator.Frontend.Forms.Services;
 using CarConfigurator.Frontend.Forms.Models;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
+using Microsoft.Azure.Mobile.Distribute;
 
 namespace CarConfigurator.Frontend.Forms
 {
@@ -27,6 +31,7 @@ namespace CarConfigurator.Frontend.Forms
         protected override void OnStart()
         {
             // Handle when your app starts
+            MobileCenter.Start("ios=53312bba-2752-4a8c-b2b3-982c99f3660f;", typeof(Analytics), typeof(Crashes), typeof(Distribute));
         }
 
         protected override void OnSleep()
